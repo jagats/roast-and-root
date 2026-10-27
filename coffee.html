@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Our Coffee — Roast &amp; Root Coffee Co.</title>
+  <meta name="description" content="Browse the full Roast & Root Coffee Co. catalogue: single-origin, small-batch roasted coffees from Araku Valley, Chikmagalur, Coorg and the Nilgiri Hills. Filter by roast level.">
+</head>
+<body>
+
+  <!-- ===== HEADER & NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="Roast &amp; Root Coffee Co. — Home">
+        <span class="logo-mark" aria-hidden="true">R</span>
+        <span>Roast &amp; Root <small>Coffee Co.</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="coffee.html" class="active">Coffee</a></li>
+          <li><a href="origins.html">Origins</a></li>
+          <li><a href="brewing.html">Brewing</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PAGE BANNER ===== -->
+    <section class="page-banner">
+      <div class="container">
+        <div class="overlay">
+          <p class="eyebrow" style="color: var(--color-tan);">Our Coffee</p>
+          <h1>The Current Roast List</h1>
+          <p>Single-origin lots, roasted to order in Bengaluru. Filter by roast level, click any coffee for the full story.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CATALOGUE ===== -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Roast-level filter buttons (powered by JavaScript) -->
+        <div class="filter-bar" role="group" aria-label="Filter coffees by roast level">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="light">Light Roast</button>
+          <button class="filter-btn" data-filter="medium">Medium Roast</button>
+          <button class="filter-btn" data-filter="dark">Medium-Dark &amp; Dark Roast</button>
+        </div>
+
+        <div class="card-grid">
+
+          <!-- Coffee 1 -->
+          <article class="card coffee-card reveal" data-roast="light"
+            data-name="Araku Valley Reserve" data-region="Araku Valley, Andhra Pradesh" data-price="₹540 / 250 g">
+            <img src="images/araku-valley.jpg" alt="Terraced coffee farms high in the hills of Araku Valley">
+            <div class="card-body">
+              <span class="card-meta">Light Roast · Andhra Pradesh</span>
+              <h3>Araku Valley Reserve</h3>
+              <p class="card-notes">Citrus, caramel, jasmine</p>
+              <p>A bright washed lot from tribal-run farms in the Eastern Ghats, showing exactly why Araku has become India's most talked-about origin.</p>
+              <div class="card-footer">
+                <span class="price">₹540</span>
+                <button type="button" class="btn btn--ghost btn--small open-product">View Details</button>
+              </div>
+              <!-- Hidden full details shown in the modal -->
+              <div class="modal-data" hidden>
+                <img src="images/araku-valley.jpg" alt="Terraced coffee farms in Araku Valley">
+                <ul class="spec-list">
+                  <li><span>Origin</span><strong>Araku Valley, Andhra Pradesh</strong></li>
+                  <li><span>Farm</span><strong>Galikonda Smallholder Collective</strong></li>
+                  <li><span>Altitude</span><strong>1,100–1,300 m</strong></li>
+                  <li><span>Roast level</span><strong>Light</strong></li>
+                  <li><span>Process</span><strong>Washed</strong></li>
+                  <li><span>Varietal</span><strong>S-795 &amp; Selection 9</strong></li>
+                  <li><span>Flavour profile</span><strong>Bright, floral, tea-like body</strong></li>
+                  <li><span>Best for</span><strong>Pour over, AeroPress</strong></li>
+                </ul>
+                <h4>Tasting Notes</h4>
+                <p>Orange zest and white sugar up front, a jasmine lift in the aroma, and a soft caramel finish. Delicate and aromatic — best brewed as filter, not espresso.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee 2 -->
+          <article class="card coffee-card reveal" data-roast="light"
+            data-name="Chikmagalur Estate" data-region="Chikmagalur, Karnataka" data-price="₹495 / 250 g">
+            <img src="images/chikmagalur.jpg" alt="A heritage coffee estate in Chikmagalur with shade trees and a tiled bungalow">
+            <div class="card-body">
+              <span class="card-meta">Light Roast · Karnataka</span>
+              <h3>Chikmagalur Estate</h3>
+              <p class="card-notes">Jasmine, lemon zest, honey</p>
+              <p>A clean washed coffee from a 120-year-old estate in the hills where Indian coffee was first planted.</p>
+              <div class="card-footer">
+                <span class="price">₹495</span>
+                <button type="button" class="btn btn--ghost btn--small open-product">View Details</button>
+              </div>
+              <div class="modal-data" hidden>
+                <img src="images/chikmagalur.jpg" alt="Heritage coffee estate in Chikmagalur">
+                <ul class="spec-list">
+                  <li><span>Origin</span><strong>Chikmagalur, Karnataka</strong></li>
+                  <li><span>Farm</span><strong>Serene Heights Estate</strong></li>
+                  <li><span>Altitude</span><strong>1,250 m</strong></li>
+                  <li><span>Roast level</span><strong>Light</strong></li>
+                  <li><span>Process</span><strong>Washed</strong></li>
+                  <li><span>Varietal</span><strong>SLN 795</strong></li>
+                  <li><span>Flavour profile</span><strong>Crisp acidity, light body, honeyed sweetness</strong></li>
+                  <li><span>Best for</span><strong>Pour over, cold brew</strong></li>
+                </ul>
+                <h4>Tasting Notes</h4>
+                <p>Honeysuckle aroma, lemon-zest acidity and a long honey finish. This is the coffee we hand to people who say they don't drink black coffee — it converts them.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee 3 -->
+          <article class="card coffee-card reveal" data-roast="medium"
+            data-name="Araku Valley — Medium Roast" data-region="Araku Valley, Andhra Pradesh" data-price="₹450 / 250 g">
+            <img src="images/araku-valley.jpg" alt="Misty morning over coffee farms in Araku Valley">
+            <div class="card-body">
+              <span class="card-meta">Medium Roast · Andhra Pradesh</span>
+              <h3>Araku Valley — Medium Roast</h3>
+              <p class="card-notes">Hazelnut, cocoa, soft orange</p>
+              <p>Our friendly everyday cup: balanced, sweet and endlessly easy to brew.</p>
+              <div class="card-footer">
+                <span class="price">₹450</span>
+                <button type="button" class="btn btn--ghost btn--small open-product">View Details</button>
+              </div>
+              <div class="modal-data" hidden>
+                <img src="images/araku-valley.jpg" alt="Coffee farms in Araku Valley">
+                <ul class="spec-list">
+                  <li><span>Origin</span><strong>Araku Valley, Andhra Pradesh</strong></li>
+                  <li><span>Farm</span><strong>Multiple smallholder farms, Borrakampadu cluster</strong></li>
+                  <li><span>Altitude</span><strong>900–1,200 m</strong></li>
+                  <li><span>Roast level</span><strong>Medium</strong></li>
+                  <li><span>Process</span><strong>Washed</strong></li>
+                  <li><span>Varietal</span><strong>S-795</strong></li>
+                  <li><span>Flavour profile</span><strong>Balanced, round, gentle sweetness</strong></li>
+                  <li><span>Best for</span><strong>French press, AeroPress, espresso</strong></li>
+                </ul>
+                <h4>Tasting Notes</h4>
+                <p>Roasted hazelnut and milk chocolate with a whisper of orange. Forgiving across almost every brewing method — the bag we recommend to first-timers.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee 4 -->
+          <article class="card coffee-card reveal" data-roast="dark"
+            data-name="Coorg Highlands" data-region="Coorg, Karnataka" data-price="₹475 / 250 g">
+            <img src="images/coorg.jpg" alt="Coffee plants growing beneath spice vines in monsoon-washed Coorg">
+            <div class="card-body">
+              <span class="card-meta">Medium-Dark Roast · Karnataka</span>
+              <h3>Coorg Highlands</h3>
+              <p class="card-notes">Dark chocolate, cardamom, brown sugar</p>
+              <p>A full-bodied coffee grown beneath cardamom and pepper vines — the spice garden in a cup.</p>
+              <div class="card-footer">
+                <span class="price">₹475</span>
+                <button type="button" class="btn btn--ghost btn--small open-product">View Details</button>
+              </div>
+              <div class="modal-data" hidden>
+                <img src="images/coorg.jpg" alt="Coffee plantation in Coorg">
+                <ul class="spec-list">
+                  <li><span>Origin</span><strong>Coorg (Kodagu), Karnataka</strong></li>
+                  <li><span>Farm</span><strong>Monsoon Canopy Estate</strong></li>
+                  <li><span>Altitude</span><strong>1,050 m</strong></li>
+                  <li><span>Roast level</span><strong>Medium-Dark</strong></li>
+                  <li><span>Process</span><strong>Washed</strong></li>
+                  <li><span>Varietal</span><strong>Robusta (fine cup) &amp; S-795 blend</strong></li>
+                  <li><span>Flavour profile</span><strong>Heavy body, low acidity, bittersweet cocoa</strong></li>
+                  <li><span>Best for</span><strong>Espresso, French press, moka pot</strong></li>
+                </ul>
+                <h4>Tasting Notes</h4>
+                <p>Dark chocolate and brown sugar, with a cardamom warmth that lingers. Cuts through milk beautifully — our house pick for cappuccino and South Indian filter.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee 5 -->
+          <article class="card coffee-card reveal" data-roast="light"
+            data-name="Nilgiri Hills" data-region="Nilgiri Hills, Tamil Nadu" data-price="₹510 / 250 g">
+            <img src="images/nilgiri-hills.jpg" alt="High-altitude coffee gardens on the slopes of the Nilgiri Hills">
+            <div class="card-body">
+              <span class="card-meta">Light Roast · Tamil Nadu</span>
+              <h3>Nilgiri Hills</h3>
+              <p class="card-notes">White peach, black tea, cane sugar</p>
+              <p>Slow-ripened at high altitude in the Blue Mountains, this lot is all clarity and grace.</p>
+              <div class="card-footer">
+                <span class="price">₹510</span>
+                <button type="button" class="btn btn--ghost btn--small open-product">View Details</button>
+              </div>
+              <div class="modal-data" hidden>
+                <img src="images/nilgiri-hills.jpg" alt="Coffee gardens in the Nilgiri Hills">
+                <ul class="spec-list">
+                  <li><span>Origin</span><strong>Nilgiri Hills, Tamil Nadu</strong></li>
+                  <li><span>Farm</span><strong>Kotagiri Ridge Smallholders</strong></li>
+                  <li><span>Altitude</span><strong>1,500–1,800 m</strong></li>
+                  <li><span>Roast level</span><strong>Light</strong></li>
+                  <li><span>Process</span><strong>Honey</strong></li>
+                  <li><span>Varietal</span><strong>SLN 9</strong></li>
+                  <li><span>Flavour profile</span><strong>Delicate, aromatic, silky body</strong></li>
+                  <li><span>Best for</span><strong>Pour over</strong></li>
+                </ul>
+                <h4>Tasting Notes</h4>
+                <p>White peach and cane sugar with a black-tea finish. The honey process adds a silky texture without weighing down its high-mountain brightness.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee 6 -->
+          <article class="card coffee-card reveal" data-roast="medium"
+            data-name="Coorg Sun-Dried" data-region="Coorg, Karnataka" data-price="₹525 / 250 g">
+            <img src="images/coorg.jpg" alt="Sun-drying coffee under the canopy in Coorg">
+            <div class="card-body">
+              <span class="card-meta">Medium Roast · Karnataka</span>
+              <h3>Coorg Sun-Dried</h3>
+              <p class="card-notes">Strawberry, wine, jaggery</p>
+              <p>A natural-processed lot dried whole on raised beds — fruity, bold and unmistakably Coorg.</p>
+              <div class="card-footer">
+                <span class="price">₹525</span>
+                <button type="button" class="btn btn--ghost btn--small open-product">View Details</button>
+              </div>
+              <div class="modal-data" hidden>
+                <img src="images/coorg.jpg" alt="Coffee drying in Coorg">
+                <ul class="spec-list">
+                  <li><span>Origin</span><strong>Coorg (Kodagu), Karnataka</strong></li>
+                  <li><span>Farm</span><strong>Monsoon Canopy Estate — natural lot</strong></li>
+                  <li><span>Altitude</span><strong>1,000 m</strong></li>
+                  <li><span>Roast level</span><strong>Medium</strong></li>
+                  <li><span>Process</span><strong>Natural (sun-dried)</strong></li>
+                  <li><span>Varietal</span><strong>S-795</strong></li>
+                  <li><span>Flavour profile</span><strong>Fruity, winey, syrupy body</strong></li>
+                  <li><span>Best for</span><strong>AeroPress, pour over</strong></li>
+                </ul>
+                <h4>Tasting Notes</h4>
+                <p>Ripe strawberry and a winey ferment, settling into dark jaggery sweetness. A limited seasonal lot — when it's gone, it's gone until next harvest.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee 7 -->
+          <article class="card coffee-card reveal" data-roast="medium"
+            data-name="Chikmagalur Cherry" data-region="Chikmagalur, Karnataka" data-price="₹465 / 250 g">
+            <img src="images/chikmagalur.jpg" alt="Coffee plants on a Chikmagalur estate">
+            <div class="card-body">
+              <span class="card-meta">Medium Roast · Karnataka</span>
+              <h3>Chikmagalur Cherry</h3>
+              <p class="card-notes">Almond, red apple, toffee</p>
+              <p>A naturally processed estate lot with a soft fruitiness and a comforting toffee finish.</p>
+              <div class="card-footer">
+                <span class="price">₹465</span>
+                <button type="button" class="btn btn--ghost btn--small open-product">View Details</button>
+              </div>
+              <div class="modal-data" hidden>
+                <img src="images/chikmagalur.jpg" alt="Coffee estate in Chikmagalur">
+                <ul class="spec-list">
+                  <li><span>Origin</span><strong>Chikmagalur, Karnataka</strong></li>
+                  <li><span>Farm</span><strong>Serene Heights Estate — cherry lot</strong></li>
+                  <li><span>Altitude</span><strong>1,150 m</strong></li>
+                  <li><span>Roast level</span><strong>Medium</strong></li>
+                  <li><span>Process</span><strong>Natural (cherry-dried)</strong></li>
+                  <li><span>Varietal</span><strong>SLN 795</strong></li>
+                  <li><span>Flavour profile</span><strong>Gentle fruit, medium body, sweet finish</strong></li>
+                  <li><span>Best for</span><strong>French press, pour over</strong></li>
+                </ul>
+                <h4>Tasting Notes</h4>
+                <p>Red apple and toasted almond with a toffee-sweet close. A gentle introduction to natural-processed Indian coffee.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee 8 -->
+          <article class="card coffee-card reveal" data-roast="dark"
+            data-name="Bengaluru Dark" data-region="Chikmagalur &amp; Coorg, Karnataka" data-price="₹440 / 250 g">
+            <img src="images/roasting.jpg" alt="Dark roasted coffee beans in a roaster's cooling tray">
+            <div class="card-body">
+              <span class="card-meta">Dark Roast · Karnataka</span>
+              <h3>Bengaluru Dark</h3>
+              <p class="card-notes">Cocoa nibs, clove, molasses</p>
+              <p>Our espresso workhorse: a two-farm dark blend built for milk and South Indian filter.</p>
+              <div class="card-footer">
+                <span class="price">₹440</span>
+                <button type="button" class="btn btn--ghost btn--small open-product">View Details</button>
+              </div>
+              <div class="modal-data" hidden>
+                <img src="images/roasting.jpg" alt="Dark roasted coffee beans">
+                <ul class="spec-list">
+                  <li><span>Origin</span><strong>Chikmagalur &amp; Coorg, Karnataka</strong></li>
+                  <li><span>Farms</span><strong>Serene Heights Estate + Monsoon Canopy Estate</strong></li>
+                  <li><span>Altitude</span><strong>1,000–1,200 m</strong></li>
+                  <li><span>Roast level</span><strong>Dark</strong></li>
+                  <li><span>Process</span><strong>Washed</strong></li>
+                  <li><span>Varietal</span><strong>S-795 &amp; fine-cup Robusta</strong></li>
+                  <li><span>Flavour profile</span><strong>Bold, heavy, bittersweet — minimal acidity</strong></li>
+                  <li><span>Best for</span><strong>Espresso, moka pot, South Indian filter</strong></li>
+                </ul>
+                <h4>Tasting Notes</h4>
+                <p>Cocoa nib and clove with a molasses depth that stands up to milk and chicory-style brewing. The coffee our café partners pull all day long.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Coffee 9 -->
+          <article class="card coffee-card reveal" data-roast="light"
+            data-name="Nilgiri Frost Lot" data-region="Nilgiri Hills, Tamil Nadu" data-price="₹560 / 250 g">
+            <img src="images/nilgiri-hills.jpg" alt="Morning haze over high-altitude coffee gardens in the Nilgiri Hills">
+            <div class="card-body">
+              <span class="card-meta">Light Roast · Tamil Nadu</span>
+              <h3>Nilgiri Frost Lot</h3>
+              <p class="card-notes">Bergamot, apricot, demerara</p>
+              <p>A micro-lot from our highest plots, picked from the slowest-ripening cherries of the season.</p>
+              <div class="card-footer">
+                <span class="price">₹560</span>
+                <button type="button" class="btn btn--ghost btn--small open-product">View Details</button>
+              </div>
+              <div class="modal-data" hidden>
+                <img src="images/nilgiri-hills.jpg" alt="Nilgiri Hills coffee gardens">
+                <ul class="spec-list">
+                  <li><span>Origin</span><strong>Nilgiri Hills, Tamil Nadu</strong></li>
+                  <li><span>Farm</span><strong>Kotagiri Ridge Smallholders — summit plots</strong></li>
+                  <li><span>Altitude</span><strong>1,750–1,800 m</strong></li>
+                  <li><span>Roast level</span><strong>Light</strong></li>
+                  <li><span>Process</span><strong>Washed, slow-dried</strong></li>
+                  <li><span>Varietal</span><strong>SLN 9</strong></li>
+                  <li><span>Flavour profile</span><strong>Complex, aromatic, crystal-clean finish</strong></li>
+                  <li><span>Best for</span><strong>Pour over</strong></li>
+                </ul>
+                <h4>Tasting Notes</h4>
+                <p>Bergamot perfume, apricot sweetness and a demerara finish. Fifty kilos per harvest, cupped and profiled individually. Our rarest release.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="fictional-note">Roast &amp; Root Coffee Co. is a fictional brand — all coffees, farms and prices are illustrative and no real purchases are possible.</p>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCT DETAIL MODAL (single shared modal, filled by JavaScript) ===== -->
+    <div class="modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <button type="button" class="modal-close" aria-label="Close product details">✕</button>
+        <span class="eyebrow" id="pm-region">Region</span>
+        <h3 id="pm-title">Coffee Name</h3>
+        <div id="pm-body"><!-- full details injected by JavaScript --></div>
+        <p class="modal-meta"><strong id="pm-price">₹000</strong> · 250 g whole beans, roasted to order</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html">
+            <span class="logo-mark" aria-hidden="true">R</span>
+            <span>Roast &amp; Root <small>Coffee Co.</small></span>
+          </a>
+          <p>Small-batch roasted specialty coffee from independent farms across India. Roasted in Bengaluru, shipped fresh across the country.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="coffee.html">Our Coffee</a></li>
+            <li><a href="origins.html">Coffee Origins</a></li>
+            <li><a href="brewing.html">Brewing Guide</a></li>
+            <li><a href="journal.html">Coffee Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <ul>
+            <li>Roast &amp; Root Coffee Co.<br>Bengaluru, India</li>
+            <li><a href="mailto:hello@roastandroot.example">hello@roastandroot.example</a></li>
+            <li>+91 80 0000 0000</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Roast &amp; Root Coffee Co. — a fictional brand created for demonstration.</span>
+        <span>Fictional company · No real orders are processed.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

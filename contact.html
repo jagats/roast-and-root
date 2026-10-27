@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Contact — Roast &amp; Root Coffee Co.</title>
+  <meta name="description" content="Contact Roast &amp; Root Coffee Co. in Bengaluru, India — questions about our coffee, brewing help, wholesale enquiries and coffee FAQs.">
+</head>
+<body>
+
+  <!-- ===== HEADER & NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="Roast &amp; Root Coffee Co. — Home">
+        <span class="logo-mark" aria-hidden="true">R</span>
+        <span>Roast &amp; Root <small>Coffee Co.</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="origins.html">Origins</a></li>
+          <li><a href="brewing.html">Brewing</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PAGE BANNER ===== -->
+    <section class="page-banner">
+      <div class="container">
+        <div class="overlay">
+          <p class="eyebrow" style="color: var(--color-tan);">Contact</p>
+          <h1>Say Hello</h1>
+          <p>Questions about a coffee, brewing trouble, wholesale interest — we read everything and reply within two working days.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT INFO + FORM ===== -->
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- Contact information -->
+        <div class="contact-info reveal">
+          <span class="eyebrow">Contact Information</span>
+          <h2>Roast &amp; Root Coffee Co.</h2>
+          <address>
+            Bengaluru, Karnataka<br>
+            India
+          </address>
+          <ul class="contact-lines">
+            <li><strong>Email</strong><a href="mailto:hello@roastandroot.example">hello@roastandroot.example</a></li>
+            <li><strong>Phone</strong>+91 80 0000 0000</li>
+            <li><strong>Roastery pick-ups</strong>Saturdays, 10 am – 2 pm (by appointment)</li>
+          </ul>
+          <p class="contact-note">These are fictional contact details for a demonstration brand — the form below shows a confirmation message but sends nothing anywhere.</p>
+        </div>
+
+        <!-- Contact form -->
+        <div class="reveal">
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" autocomplete="name" placeholder="Your name">
+                <p class="error-msg" role="alert"></p>
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" autocomplete="email" placeholder="you@example.com">
+                <p class="error-msg" role="alert"></p>
+              </div>
+              <div class="form-field form-field--full">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="e.g. Brewing help with the Nilgiri Hills lot">
+                <p class="error-msg" role="alert"></p>
+              </div>
+              <div class="form-field form-field--full">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" placeholder="Tell us how we can help…"></textarea>
+                <p class="error-msg" role="alert"></p>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--primary" style="margin-top: 24px;">Send Message</button>
+            <div class="form-success" id="form-success" role="status">
+              ☕ Thank you — your message has been received (well, it would be, if this were a real form!). We reply within two working days.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>The coffee questions we hear most often at the roastery.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>How fresh is your coffee?</summary>
+            <p>Every bag is roasted to order and shipped within one working day of the roast. The roast date is printed on every bag — look for it near the bottom. We recommend brewing filter coffees between day 5 and day 21 after roast, when aromatics peak.</p>
+          </details>
+          <details>
+            <summary>How should I store coffee beans?</summary>
+            <p>Keep the beans in their original sealed bag (or an airtight container) at room temperature, away from light and moisture. Don't refrigerate — coffee absorbs fridge odours and condensation stales it faster. Buy the amount you'll finish in two to three weeks, and grind just before brewing.</p>
+          </details>
+          <details>
+            <summary>Which coffee should a beginner try?</summary>
+            <p>Start with Araku Valley — Medium Roast. It's balanced, forgiving across brewing methods, and sweet with milk or without. If you prefer your coffee bright and black, step up to Chikmagalur Estate — Light Roast once you're comfortable.</p>
+          </details>
+          <details>
+            <summary>Can I use your coffee in an espresso machine?</summary>
+            <p>Yes — two of our coffees are built for it. Bengaluru Dark (Dark Roast) and Coorg Highlands (Medium-Dark) both pull well as espresso and stand up to milk. Lighter filter roasts can be pulled as espresso too, but they'll taste brighter and take grind adjustment — our Brewing page has the full starting recipe.</p>
+          </details>
+          <details>
+            <summary>How long should coffee beans rest after roasting?</summary>
+            <p>Freshly roasted coffee vents CO₂ for a few days, which makes early brews uneven. Rest filter roasts 4–7 days; rest dark espresso roasts 7–10 days for the most stable shots. After roughly three weeks, drink up — aroma slowly fades from there.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html">
+            <span class="logo-mark" aria-hidden="true">R</span>
+            <span>Roast &amp; Root <small>Coffee Co.</small></span>
+          </a>
+          <p>Small-batch roasted specialty coffee from independent farms across India. Roasted in Bengaluru, shipped fresh across the country.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="coffee.html">Our Coffee</a></li>
+            <li><a href="origins.html">Coffee Origins</a></li>
+            <li><a href="brewing.html">Brewing Guide</a></li>
+            <li><a href="journal.html">Coffee Journal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <ul>
+            <li>Roast &amp; Root Coffee Co.<br>Bengaluru, India</li>
+            <li><a href="mailto:hello@roastandroot.example">hello@roastandroot.example</a></li>
+            <li>+91 80 0000 0000</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Roast &amp; Root Coffee Co. — a fictional brand created for demonstration.</span>
+        <span>Fictional company · No real orders are processed.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
